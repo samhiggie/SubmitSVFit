@@ -3,23 +3,13 @@
 <use   name="PhysicsTools/FWLite"/>
 <use   name="PhysicsTools/Utilities"/>
 <use   name="DataFormats/FWLite"/>
-<use   name="TauAnalysis/SVfitStandalone"/> 
+<use   name="TauAnalysis/ClassicSVfit"/> 
 <use   name="roofit"/>
 <use   name="roostats"/>
-<use   name="HTT-utilities/RecoilCorrections"/>
 
 <!--<use   name="roottmva"/>0-->
 
 
-<bin   name="SVFitStandAlone" file="SVFitStandAlone.cc">
-</bin>
-<bin   name="SVFitStandAloneRecoil" file="SVFitStandAloneRecoil.cc">
-</bin>
-<bin   name="SVFitStandAloneFSA" file="SVFitStandAloneFSA.cc">
-</bin>
-<bin   name="SVFitStandAloneFSATauDM" file="SVFitStandAloneFSATauDM.cc">
-</bin>
-
-<bin   name="OptimizeCuts" file="OptimizeCuts.cc">
+<bin   name="SVFitStandAloneFSATauDM_etau_norecoil" file="SVFitStandAloneFSATauDM_etau_norecoil.cc">
   <use   name="SubmitSVFit/ROOT"/>
 </bin>
