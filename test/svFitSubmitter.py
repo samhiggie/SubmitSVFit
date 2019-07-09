@@ -27,6 +27,9 @@ def parse_command_line(argv):
     parser.add_argument('-d','--customDir',nargs='?',type=str,const='',help='Custom input directory')
     parser.add_argument('-sd','--sampledir',nargs='?',type=str,const='',help='The Sample Input directory')
     parser.add_argument('-es','--doES',nargs='?',type=str,const='',help='Doing TES / EES shifts?')
+    parser.add_argument('-ues','--doUES',nargs='?',type=str,const='',help='Doing TES / EES shifts?')
+    parser.add_argument('-res','--doRES',nargs='?',type=str,const='',help='Doing TES / EES shifts?')
+    parser.add_argument('-jes','--doJES',nargs='?',type=str,const='',help='Doing TES / EES shifts?')
     args = parser.parse_args(argv)
 
     return args
@@ -81,6 +84,15 @@ def main(argv=None):
     if args.doES : doES = "doES="+args.doES
     else : doES = ''
     bashScript += ' %s' % (doES)
+    if args.doUES : doUES = "doUES="+args.doUES
+    else : doUES = ''
+    bashScript += ' %s' % (doUES)
+    if args.doRES : doRES = "doRES="+args.doRES
+    else : doRES = ''
+    bashScript += ' %s' % (doRES)
+    if args.doJES : doJES = "doJES="+args.doJES
+    else : doJES = ''
+    bashScript += ' %s' % (doJES)
     bashScript += '\n'
     with open(bash_name,'w') as file:
         file.write(bashScript)
