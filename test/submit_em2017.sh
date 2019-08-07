@@ -1,3 +1,8 @@
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_29jul_merged/Out_embeddedB -es=1 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_29jul_merged/Out_embeddedC -es=1 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_29jul_merged/Out_embeddedD -es=1 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_29jul_merged/Out_embeddedE -es=1 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_29jul_merged/Out_embeddedF -es=1 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
 python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_13jun_merged/Out_DataB -es=0 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
 python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_13jun_merged/Out_DataC -es=0 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun
 python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhem2017_13jun_merged/Out_DataD -es=0 -ues=0 -res=0 -jes=0 --jobName smhem2017_svfitted_13jun

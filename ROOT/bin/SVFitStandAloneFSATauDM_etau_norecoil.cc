@@ -690,7 +690,7 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
 
              if (gen_match_2<=5){
                 float ES_UP_scale=1.0; // this value is for jet -> tau fakes
-                if (gen_match_2<5) ES_UP_scale=1.03; // for gen matched ele/muon
+                if (gen_match_2<5) ES_UP_scale=1.02; // for gen matched ele/muon
 		if (year==2016){
                     if (gen_match_2==5 && decayMode2==0) ES_UP_scale=1.010; // for real taus
                     if (gen_match_2==5 && decayMode2==0) ES_UP_scale=1.009; // for real taus
@@ -723,7 +723,7 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
                runSVFit(measuredTauLeptonsUP, metcorr_ex_UP, metcorr_ey_UP, covMET, 0, svFitMass_UP, svFitPt_UP, svFitEta_UP, svFitPhi_UP);
 
                 float ES_DOWN_scale=1.0; // jet
-                if (gen_match_2<5) ES_UP_scale=0.97;
+                if (gen_match_2<5) ES_UP_scale=0.98;
                 if (gen_match_2==5) ES_DOWN_scale=0.992; // tau
                 if (year==2016){
                     if (gen_match_2==5 && decayMode2==0) ES_DOWN_scale=0.990; // for real taus

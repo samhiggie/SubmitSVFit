@@ -645,11 +645,11 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
                runSVFit(measuredTauLeptonsUP, metcorr_ex_UP, metcorr_ey_UP, covMET, 0, svFitMass_MESUp, svFitPt_MESUp, svFitEta_MESUp, svFitPhi_MESUp);
 
                 float ES_DOWN_scale=1.0; // jet
-                if (eta1<-2.1) ES_DOWN_scale=1.027;
-                else if (eta1<-1.2) ES_DOWN_scale=1.009;
-                else if (eta1<1.2) ES_DOWN_scale=1.004;
-                else if (eta1<2.1) ES_DOWN_scale=1.009;
-                else ES_DOWN_scale=1.017;
+                if (eta1<-2.1) ES_DOWN_scale=0.973;
+                else if (eta1<-1.2) ES_DOWN_scale=0.991;
+                else if (eta1<1.2) ES_DOWN_scale=0.996;
+                else if (eta1<2.1) ES_DOWN_scale=0.991;
+                else ES_DOWN_scale=0.983;
                 double pt1_DOWN;
                 pt1_DOWN = pt1 * ES_DOWN_scale;
                 double metcorr_ex_DOWN, metcorr_ey_DOWN;
@@ -670,7 +670,7 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
 
              if (gen_match_2<=5){
                 float ES_UP_scale=1.0; // this value is for jet -> tau fakes
-                if (gen_match_2<5) ES_UP_scale=1.03; // for gen matched ele/muon
+                if (gen_match_2<5) ES_UP_scale=1.02; // for gen matched ele/muon
                 if (year==2016){
                     if (gen_match_2==5 && decayMode2==0) ES_UP_scale=1.010; // for real taus
                     if (gen_match_2==5 && decayMode2==0) ES_UP_scale=1.009; // for real taus
@@ -704,7 +704,7 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
                runSVFit(measuredTauLeptonsUP, metcorr_ex_UP, metcorr_ey_UP, covMET, 0, svFitMass_UP, svFitPt_UP, svFitEta_UP, svFitPhi_UP);
 
                 float ES_DOWN_scale=1.0; // jet
-                if (gen_match_2<5) ES_DOWN_scale=0.97;  // elec/mu
+                if (gen_match_2<5) ES_DOWN_scale=0.98;  // elec/mu
                 if (year==2016){
                     if (gen_match_2==5 && decayMode2==0) ES_DOWN_scale=0.990; // for real taus
                     if (gen_match_2==5 && decayMode2==0) ES_DOWN_scale=0.991; // for real taus

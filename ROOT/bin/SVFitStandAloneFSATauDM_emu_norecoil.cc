@@ -704,10 +704,10 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
 	  	//##########################################################
 
                 ES_UP_scale=1.0; // this value is for jet -> tau fakes
-		if (eta1<-2.1) ES_UP_scale=1.027;
-		else if (eta1<-1.2) ES_UP_scale=1.009;
-                else if (eta1<1.2) ES_UP_scale=1.004;
-                else if (eta1<2.1) ES_UP_scale=1.009;
+		if (eta2<-2.1) ES_UP_scale=1.027;
+		else if (eta2<-1.2) ES_UP_scale=1.009;
+                else if (eta2<1.2) ES_UP_scale=1.004;
+                else if (eta2<2.1) ES_UP_scale=1.009;
                 else ES_UP_scale=1.017;
                 float pt2_UP = pt2 * ES_UP_scale;
                 float dx2_UP = pt2_UP * TMath::Cos( phi2 ) * (( 1. / ES_UP_scale ) - 1.);
@@ -721,11 +721,11 @@ void readdir(TDirectory *dir, optutl::CommandLineParser parser, char TreeToUse[]
                runSVFit(measuredTauLeptonsUP, metcorr_ex_UP, metcorr_ey_UP, covMET, 0, svFitMass_MESUp, svFitPt_MESUp, svFitEta_MESUp, svFitPhi_MESUp);
 
                 ES_DOWN_scale=1.0; // jet
-                if (eta1<-2.1) ES_DOWN_scale=1.027;
-                else if (eta1<-1.2) ES_DOWN_scale=1.009;
-                else if (eta1<1.2) ES_DOWN_scale=1.004;
-                else if (eta1<2.1) ES_DOWN_scale=1.009;
-                else ES_DOWN_scale=1.017;
+                if (eta2<-2.1) ES_DOWN_scale=0.973;
+                else if (eta2<-1.2) ES_DOWN_scale=0.991;
+                else if (eta2<1.2) ES_DOWN_scale=0.996;
+                else if (eta2<2.1) ES_DOWN_scale=0.991;
+                else ES_DOWN_scale=0.983;
                 float pt2_DOWN = pt2 * ES_DOWN_scale;
                 float dx2_DOWN = pt2_DOWN * TMath::Cos( phi2 ) * (( 1. / ES_DOWN_scale ) - 1.);
                 float dy2_DOWN = pt2_DOWN * TMath::Sin( phi2 ) * (( 1. / ES_DOWN_scale ) - 1.);
