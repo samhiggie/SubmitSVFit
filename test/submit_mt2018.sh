@@ -51,3 +51,7 @@ python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_4aug_merged/Out_
 python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_4aug_merged/Out_GGZHQQTT -es=1 -ues=1 -res=1 -jes=1 --jobName smhmt2018_svfitted_4aug
 python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_4aug_merged/Out_GGZHNNTT -es=1 -ues=1 -res=1 -jes=1 --jobName smhmt2018_svfitted_4aug
 python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_4aug_merged/Out_ttHTT -es=1 -ues=1 -res=1 -jes=1 --jobName smhmt2018_svfitted_4aug
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_15aug_merged/Out_EmbeddedB -es=1 -ues=0 -res=0 -jes=0 --jobName smhmt2018_svfitted_4aug
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_15aug_merged/Out_EmbeddedC -es=1 -ues=0 -res=0 -jes=0 --jobName smhmt2018_svfitted_4aug
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_15aug_merged/Out_EmbeddedA -es=1 -ues=0 -res=0 -jes=0 --jobName smhmt2018_svfitted_4aug
+python svFitSubmitter.py -sd /hdfs/store/user/caillol/smhmt2018_15aug_merged/Out_EmbeddedD -es=1 -ues=0 -res=0 -jes=0 --jobName smhmt2018_svfitted_4aug
