@@ -12,6 +12,8 @@
 
 <bin   name="SVFitStandAloneFSATauDM_mutau_norecoil" file="SVFitStandAloneFSATauDM_mutau_norecoil.cc">
 </bin>
+<bin   name="SVFitStandAloneFSATauDM_mutau_JEC" file="SVFitStandAloneFSATauDM_mutau_JEC.cc">
+</bin>
 <bin   name="SVFitStandAloneFSATauDM_tautau_norecoil" file="SVFitStandAloneFSATauDM_tautau_norecoil.cc">
 </bin>
 <bin   name="SVFitStandAloneFSATauDM_etau_norecoil" file="SVFitStandAloneFSATauDM_etau_norecoil.cc">
